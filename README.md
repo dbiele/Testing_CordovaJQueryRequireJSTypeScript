@@ -9,12 +9,12 @@ The problem code is located in `scripts\index.ts`.
  
 When App.initialize() is commented out, no errors are reported when debugging in Ripple. 
 
-`
+```
 require(['../cordova', 'app'], function (app) {
     //The following line appears to be the problem. When uncommented it causes the error and looks for scripts/jquery.
     //App.initialize();
 });
-`
+```
 
 However, when App.initialize() is uncommented and tested in ripple, require.js looks only for scripts/jquery and disregards any settings in requirejs.config.
 
